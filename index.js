@@ -60,7 +60,7 @@ function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
       itemIndex = i;
-      var updCart = 
+      var updCart = cart.splice(i, 1);
     } else {
       itemIndex = null;
       return "That item is not in your cart.";
