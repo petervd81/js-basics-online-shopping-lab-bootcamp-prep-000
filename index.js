@@ -30,11 +30,11 @@ function viewCart() {
   } else {
   retStr = "In your cart, you have ";
   for (var i = 0; i < cart.length; i++) {
-    if (i == cart.length -1 ) {
+    if (i == cart.length -1  && cart.length > 1 ) {
       retStr += "and ";
     }
     retStr += `${cart[i].itemName} at $${cart[i].itemPrice}`;
-    if (i !== cart.length -1 && cart.length > 1) {
+    if (i !== cart.length -1) {
       retStr += ", ";
     } else {
       retStr += ".";
