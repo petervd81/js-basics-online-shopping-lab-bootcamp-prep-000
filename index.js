@@ -34,7 +34,7 @@ function viewCart() {
       retStr += "and ";
     }
     retStr += `${cart[i].itemName} at $${cart[i].itemPrice}`;
-    if (i !== cart.length -1 ) {
+    if (i !== cart.length -1 && cart.length > 1) {
       retStr += ", ";
     } else {
       retStr += ".";
