@@ -30,7 +30,12 @@ function viewCart() {
   } else {
   retStr = "In your cart, you have ";
   for (var i = 0; i < cart.length; i++) {
-    retStr += `${cart[i].itemName} at $${cart[i].itemPrice
+    retStr += `${cart[i].itemName} at $${cart[i].itemPrice}`;
+    if (i !== cart.length -1 ) {
+      retStr += ", and ";
+    } else {
+      retStr += ".";
+    }
   }
   }
 }
